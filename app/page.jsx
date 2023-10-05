@@ -4,25 +4,11 @@ const Home = () => {
   return (
     <>
       <h1 className="text-3xl font-semibold">Home</h1>
-      <div className="text-sm">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <div className="text-sm grid w-screen h-60 sm:h-32 md:h-60 lg:h-72 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 divide-x-2 divide-y-2">
+        <div className = "flex justify-center items-center rounded-full">Pic 1</div>
+        <div className = "flex justify-center items-center rounded-full">Pic 1</div>
+        <div className="flex justify-center items-center rounded-full">Pic 1</div>
+        <div className="flex justify-center items-center rounded-full">Pic 1</div>
       </div>
     </>
   );
