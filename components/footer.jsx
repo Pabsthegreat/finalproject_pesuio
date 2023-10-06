@@ -1,29 +1,30 @@
 import React from 'react'
-
+import Link from 'next/link';
 const Footer = () => {
   return (
-    <div className=' w-screen h-14 sm:h-14 md:h-12 lg:h-44 border-t-4 border-black text-slate-800 text-center text-xs grid grid-cols-3 gap-2 divide-x-2 divide-y-2'>
-      
-      <span>
-      <p>About Bargain</p>
+    <div className=' w-screen h-32 sm:h-32 md:h-32 lg:h-44 text-white text-center text-xs grid grid-cols-3 gap-2 bg-black place-content-end border-y-4 border-y-white'>
+      <div className='text-gray-200'>
+      <h1 className = "font-bold">About Bargain</h1>
       <p>More than 200k members and counting</p>
       <p>1000+ brands </p>
-      </span>
+      </div>
 
-      <span>
-      <p>Help & Contact</p>
+      <div className='text-gray-200'>
+      <h1 className = "font-bold">Contact</h1>
       <p>Customer helpline:+91 00573974XX</p>
-      <p>Terms and privacy</p>
-      </span>
+      <p>Email to Us at bargainhelp@bargain.com</p>
+      <p>Terms and Conditions</p>
+      <p>Privacy</p>
+      </div>
 
-      <span> 
-      <p> Community bold</p>
-      <p>Meta</p>
-      <p>Instagram</p>
-      <p>X</p>
-      </span>
+      <div className='text-gray-200'> 
+      <h1 className = "font-bold">Community</h1>
+      <Link href="https://about.meta.com/">Meta</Link>
+      <Link href="https://about.instagram.com/">Instagram</Link>
+      <Link href="https://about.x.com/">X</Link>
+      </div>
     </div>
   ) 
 }
 
-export default Footer
+export default Footer;

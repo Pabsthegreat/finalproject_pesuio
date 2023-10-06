@@ -1,19 +1,16 @@
 "use client";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
     return(
-        <div className="w-screen h-4 sm:h-12 md:h-20 lg:h-16 grid grid-cols-5 divide-x-2 ">
-            <div className="border-rounded align-middle justify-center flex border-black">
-                </div>
-            <div className="flex col-span-3 justify-center">
-                <input content="text" placeholder="Searchh For anything in Bargain" width={40} size={100} className="rounded-lg bg-slate-400 text-lg"></input>
+        <div className="w-screen h-4 sm:h-12 md:h-20 lg:h-16 grid grid-cols-5 place-items-center">
+            <div className= "border-rounded align-middle justify-center flexobject-cover h-1/2 w-1/12 rounded-full"><Link href = "/"><Image src = "/logo.jpeg" width = {500} height = {500} alt = 'pic1'/></Link></div>
+            <div className= "flex col-span-3 justify-center">
+                <input content="text" placeholder="Search For anything in Bargain" width={40} size={100} className="rounded-lg  text-lg"></input>
             </div>
             <div className="border-rounded align-middle justify-center flex border-black">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-</svg>
-
             </div>
         </div>
     )

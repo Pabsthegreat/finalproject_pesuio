@@ -10,10 +10,6 @@ const Navbar = () => {
       name: "home",
     },
     {
-      links: "/posts",
-      name: "posts",
-    },
-    {
       links: "/about",
       name: "about",
     },
@@ -21,7 +17,7 @@ const Navbar = () => {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <nav className="flex gap-x-3 my-4 text-sm border-black border-2">
+    <nav className="flex gap-x-3 my-4 text-sm bg-black text-white">
       {links.map((link) => (
         <Link
           key={link.links}
