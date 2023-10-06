@@ -1,0 +1,58 @@
+{
+    "categories":[
+        {
+            "id":"1",
+            "title":"a",
+            "img":"b",
+            "amazon":"m",
+            "flip":"d",
+            "ebay":"f",
+            "deals":"deals"
+
+        },
+
+        {
+            "id":"1",
+            "title":"a",
+            "img":"b",
+            "amazon":"m",
+            "flip":"d",
+            "ebay":"f",
+            "deals":"deals"
+
+        },
+
+        {
+            "id":"1",
+            "title":"a",
+            "img":"b",
+            "amazon":"m",
+            "flip":"d",
+            "ebay":"f",
+            "deals":"deals"
+
+        },
+
+        {
+            "id":"1",
+            "title":"a",
+            "img":"b",
+            "amazon":"m",
+            "flip":"d",
+            "ebay":"f",
+            "deals":"deals"
+
+        },
+
+        {
+            "id":"1",
+            "title":"a",
+            "img":"b",
+            "amazon":"m",
+            "flip":"d",
+            "ebay":"f",
+            "deals":"deals"
+
+        }
+    ]
+}
