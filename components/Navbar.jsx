@@ -4,33 +4,20 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
-  const links = [
-    {
-      links: "/",
-      name: "home",
-    },
-    {
-      links: "/about",
-      name: "about",
-    },
-  ];
-  const pathname = usePathname();
-  console.log(pathname);
   return (
-    <nav className="flex gap-x-3 my-4 text-sm bg-black text-white">
-      {links.map((link) => (
-        <Link
-          key={link.links}
-          className={`${
-            pathname === link.links && "underline"
-          } hover:underline capitalize`}
-          href={link.links}
-        >
-          {link.name}
-        </Link>
-      ))}
-    </nav>
+    <>
+    <div className=" w-screen h-fit grid grid-cols-12 bg-black grid-flow-row-dense">
+      <div className='text-gray-200 flex col-span-1'>
+            <Link href="/" className="text-white"><h1>Home</h1></Link>
+      </div>
+
+      <div className='text-gray-200 flex col-span-1'>
+        <Link href="/about" className="text-white"><h1>About</h1></Link>
+      </div>
+    </div>
+    </>
   );
+
 };
 
 export default Navbar;
